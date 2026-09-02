@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeWithMunaaf</title>
+    <title>CA Nitin Murarka (SMC)™</title>
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,11 +13,18 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '27187832194150977');
+    
+    /* Galti Thik Ki: ID ke aage se space hata diya hai */
+    fbq('init', '2317051645501220'); 
     fbq('track', 'PageView');
+
+    /* Naya Function: Button click track karne ke liye */
+    function trackTelegramClick() {
+        fbq('track', 'Lead', {content_name: 'Telegram Join Button'});
+    }
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=27187832194150977&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2317051645501220&ev=PageView&noscript=1"
     /></noscript>
     <style>
         body {
@@ -47,12 +54,18 @@
             height: 120px;
             margin: 0 auto 20px;
             border-radius: 50%;
-            background: white;
+            background: #fff;
             padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
 
         .logo-container img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 50%;
         }
 
@@ -100,10 +113,10 @@
 
 <div class="card">
     <div class="logo-container">
-        <img src="https://via.placeholder.com/120x120/FFD700/000000?text=TRADER+MUNAAF" alt="Logo">
+        <img src="logo.png" alt="Logo">
     </div>
 
-    <h1>TradeWithMunaaf₹</h1>
+    <h1>CA NITIN MURARKA</h1>
 
     <div class="info-list">
         <div>📊 NIFTY · BANKNIFTY · SENSEX</div>
@@ -112,14 +125,15 @@
         <div>🎯 6+ Years Experience</div>
     </div>
 
-    <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG">
+    <!-- Galti Thik Ki: onclick="trackTelegramClick()" add kar diya hai -->
+    <a href="https://t.me/+uJIyw9iPlL8yZmRl" class="btn" onclick="trackTelegramClick()">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG Logo">
         Join Telegram
     </a>
 
     <div class="footer-text">
         Contact Only For Ads Setup 👑<br>
-        Ads Managed By <a href="https://t.me/+jE7sEbzR23gwM2U1">Kunal</a>
+        Ads Managed By <a href="https://t.me/+xVA7ngAlHvIzNjVl">Kunal</a>
     </div>
 </div>
 
